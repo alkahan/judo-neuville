@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+rsync -a --one-file-system --delete -v /usr/src/app/ /srv/www/
+
+exec sh

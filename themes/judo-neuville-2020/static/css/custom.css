@@ -1,0 +1,172 @@
+html,body {
+    color: #555;
+}
+html, body {
+    height: 100%;
+}
+
+footer {
+    margin-top: 50px;
+    min-height: 200px;
+    background-color: #555;
+}
+.h-card {
+}
+
+.site-title {
+    font-size: 2em;
+    text-shadow: 2px 2px #cccccc;
+/*    background: grey 50%/ cover;
+    background-clip: text;
+    filter: invert(1) grayscale(1) contrast(1);
+    mix-blend-mode: difference;*/
+}
+
+.p-street-address, .p-locality, .p-postal-code {
+    text-shadow: 2px 2px #cccccc;
+}
+
+.card-item {
+    padding: 1em;
+    posititon: relative;
+}
+
+.card-item h3 {
+    margin: 1em 0;
+    text-shadow: 2px 2px #555;
+}
+
+.card-item div {
+    text-shadow: 2px 2px #555;
+}
+
+.nav-link {
+    background-color: #555;
+}
+
+.header {
+    position: relative;
+}
+.no-js .header::before, .no-webp .header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #cccccc;
+    background-color: black;
+    filter: grayscale(1) contrast(1);
+    opacity: 0.3;*/
+    filter: grayscale(0) contrast(1) blur(2px);
+    z-index: -1;
+}
+.webp .header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../img/header.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #cccccc;
+    background-color: black;
+    filter: grayscale(1) contrast(1);
+    opacity: 0.3;*/
+    filter: grayscale(0) contrast(1) blur(2px);
+    z-index: -1;
+}
+.header .logo {
+    z-index: 100;
+}
+.no-webp .eveil, .no-js .eveil {
+    background-image: url('../img/eveil.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.no-webp .taiso, .no-js .taiso {
+    background-image: url('../img/taiso.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.no-webp .adulte, .no-js .adulte {
+    background-image: url('../img/adultes.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.webp .eveil {
+    background-image: url('../img/eveil.webp');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.webp .taiso {
+    background-image: url('../img/taiso.webp');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.webp .adulte {
+    background-image: url('../img/adultes.webp');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #555;
+    color: #eee;
+}
+
+tr {
+}
+
+tr:nth-child(even) {background: #eee}
+
+
+table tr td, table tr th {
+    padding: 0.5em;
+}
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+
+.inline-svg {
+    display: inline-block;
+    position: relative;
+}
+.logo-facebook svg{
+    padding: 0;
+}
+.nav a.logo-facebook {
+    width: 1.5em;
+    padding: 0;
+    margin: 0;
+    color: #3b5998 !important;
+    background-color: white;
+}

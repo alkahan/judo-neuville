@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" style="height: 100%">
+{{- partial "head.html" . -}}
+
+<body style="height: 100%">
+    <div class="d-flex flex-column h-100">
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+        <div class="flex-fill flex-row row no-gutters">
+            <div class="text-white col-lg align-items-center justify-content-center eveil">
+                <div class="card-item">
+                    <h3>Cours enfants</h3>
+                    <div class="">
+                        Dès 4 ans, les enfants peuvent participer au cours d'éveil Judo.
+                    </div>
+                </div>
+                <a href="page/tarifs" class="stretched-link"></a>
+            </div>
+            <div class="text-white col-lg align-items-center justify-content-center taiso position-relative">
+                <div class="card-item">
+                    <h3>Taïso</h3>
+                    <div class="">
+                        Le club, c'est aussi le Taïso. Pour reprendre doucement
+                        une activité physique, garder la forme ou comme
+                        préparation physique pour d'autres disciplines, nos
+                        cours de Taïso peuvent s'adapter à tous les niveaux. A
+                        partir de 14 ans.
+                    </div>
+                </div>
+                <a href="page/taiso" class="stretched-link"></a>
+            </div>
+            <div class="text-white col-lg align-items-center justify-content-center adulte">
+                <div class="card-item">
+                    <h3>Cours adultes</h3>
+                    <div class="">
+                        Découvrir le judo à 50 ans, reprendre après 20 ans
+                        d'arrêt ou pour les confirmés, le cours adulte s'adresse
+                        à tous.
+                    </div>
+                </div>
+                <a href="page/tarifs" class="stretched-link"></a>
+            </div>
+        </div>
+    </div>
+    <script src="{{ "js/jquery-3.5.1.slim.min.js" | absURL}}"></script>
+    <script src="{{ "js/popper.min.js" | absURL}}"></script>
+    <script src="{{ "js/bootstrap.min.js" | absURL}}"></script>
+    <script src="{{ "js/modernizr-custom.js" | absURL}}"></script>
+</body>
+
+</html>
