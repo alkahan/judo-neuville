@@ -14,11 +14,30 @@ services:
     image: nas:5000/neuville
     volumes:
     - html:/srv/www:rw
+#  www:
+#    image: nas:5000/web-server
+#    restart: always
+#    volumes:
+#    - html:/srv/web:ro
+#    depends_on:
+#    - app
+#    labels:
+#      traefik.enable: true
+#      traefik.http.routers.neuville.rule: Host(`www.judo-neuville.eu.org`) || Host(`judo-neuville.eu.org`)
+#      traefik.http.routers.neuville.middlewares: neuville-compress
+#      traefik.http.middlewares.neuville-compress.compress: true
+#    networks:
+#    - public
   www:
-    image: nas:5000/web-server
+    image: registry.ascalium.com/apache
     restart: always
     volumes:
-    - html:/srv/web:ro
+    - html:/srv/www:ro
+    tmpfs:
+    - /run
+    - /tmp
+    - /var/tmp
+    - /usr/local/apache2/logs
     depends_on:
     - app
     labels:

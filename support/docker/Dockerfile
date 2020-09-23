@@ -22,5 +22,6 @@ RUN apk add --no-cache rsync
 RUN mkdir -p /usr/src/
 COPY --from=builder /usr/src/app/public /usr/src/app
 COPY support/docker/app-start /usr/bin/app-start
+COPY htaccess /usr/src/app/.htaccess
 
 CMD [ "/usr/bin/app-start" ]
