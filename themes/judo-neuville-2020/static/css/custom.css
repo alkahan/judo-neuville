@@ -170,3 +170,9 @@ table tr td, table tr th {
     color: #3b5998 !important;
     background-color: white;
 }
+
+body #content section aside {
+    position: sticky;
+    top: -10px;
+    align-self: start;
+}

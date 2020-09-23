@@ -1,6 +1,7 @@
 ---
 title: "Inscription"
 draft: false
+toc: true
 menu:
   main:
     title: "Inscription"
@@ -23,21 +24,28 @@ judoclub.neuvillesursarthe@yahoo.fr ou en main propre.
 
 **Modalités de paiement**: CB en ligne, chèque, espèce, bon CAF, coupon sport, chèque vacances, chèque collège
 
-### Certificat Médical
+## Certificat Médical
 Le certificat médical doit attester de l'absence de contre-indication à la
 pratique du sport en compétition.
 
-De préférence, utilisez le document **Certificat Médical** qui est fourni en lien plus bas.
+De préférence, utilisez le document **[Certificat
+  Médical](https://drive.google.com/file/d/0B2I1jJYO2qirNFhEZGh5TEl3NFE/view)**
+ qui est fourni en lien plus bas.
 
 - Pour **une nouvelle inscription**, le certificat médical doit dater de
 moins d'un an.
 - Pour **un renouvellement sans discontinuité**, le certificat médical doit
-dater de moins de 3 ans. Je réponds alors au questionnaire **QS-SPORT**, et si
+dater de moins de 3 ans. Je réponds alors au **[Questionnaire
+"QS-SPORT"](http://dev.licences-ffjudo.com/FFJDA_licences/Documents/QS-SPORT%20cerfa_15699.pdf)**
+, et si
 j'ai répondu par la négative à l'ensemble des rubriques du questionnaire, je
-retourne l'Attestation QS sport. Dans le cas contraire je fournis un nouveau
+retourne l'
+**[Attestation
+"QS-SPORT"](https://dev.licences-ffjudo.com/espacelicence/Fichiers/ATTESTATION%20QS%20sport.pdf)**
+. Dans le cas contraire je fournis un nouveau
 certificat médical.
 
-### Équipement personnel
+## Équipement personnel
 - Judogi
 - Zoris, Tongs ou Claquettes : pour marcher en dehors du tatami
 - Gourde ou bouteille d’eau
@@ -50,7 +58,7 @@ prendre la taille du judoka arrondie à la dizaine supérieure. Exemple: pour un
 enfant de 122cm, il faut prendre un Judogi de 130cm. Un adulte de 185cm doit
 prendre un Judogi de 190cm.
 
-### Protocole Covid19
+## Protocole Covid19
 - avant d’entrer dans les locaux, les pratiquants veillent à s’être douchés,
   cheveux lavés, ongles coupés et porter un judogi propre.
 - les vestiaires sont fermés, les pratiquants doivent donc arriver en tenue
@@ -63,7 +71,7 @@ prendre un Judogi de 190cm.
   sachet plastique.
 
 
-### Documents utiles
+## Documents utiles
 Pour référence voici les différents documents dont vous pouvez avoir besoin:
 * [Certificat Médical](https://drive.google.com/file/d/0B2I1jJYO2qirNFhEZGh5TEl3NFE/view)
 * [Questionnaire "QS-SPORT"](http://dev.licences-ffjudo.com/FFJDA_licences/Documents/QS-SPORT%20cerfa_15699.pdf)

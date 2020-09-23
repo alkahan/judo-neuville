@@ -1,10 +1,18 @@
 {{ define "main" }}
 <section id="main" class="container">
     <h1 id="title">{{ .Title }}</h1>
-    <div>
-        <article id="content">
+    <div class="row">
+        <article id="content" class="col">
             {{ .Content }}
         </article>
+    {{ if .Params.toc }}
+        <aside class="col-md-auto">
+            <header>
+                <h3>{{.Title}}</h3>
+            </header></h2></header>
+                {{ .TableOfContents }}
+        </aside>
+        {{ end }}
     </div>
 </section>
 {{ end }}
