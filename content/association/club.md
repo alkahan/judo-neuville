@@ -5,6 +5,11 @@ menu:
   main:
     title: "Le Club"
     weight: 130
+microformat:
+  "@context": "https://schema.org"
+  "@type": "Organization"
+  "url": "https://judo-nueville.eu.org"
+  "logo": "https://judo-neuville.eu.org/img/logo-judo.jpg"
 ---
 
 Créé en 1986, le club a pris ses quartiers dans le dojo du compexe sportif de Neuville depuis 2000.

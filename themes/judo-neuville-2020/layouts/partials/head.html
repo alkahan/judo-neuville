@@ -10,6 +10,11 @@
 	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
 	{{ hugo.Generator }}
 	<title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+    {{ with .Params.microformat }}
+    <script type="application/ld+json">
+        {{ . }}
+    </script>
+    {{ end }}
 	{{ "<!-- Stylesheets -->" | safeHTML }}
 	<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}?{{ now.Unix }}">
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL}}">
