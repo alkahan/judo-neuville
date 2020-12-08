@@ -176,3 +176,28 @@ body #content section aside {
     top: -10px;
     align-self: start;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nojs .img .lazyload {
+    display: none;
+}
+.img svg,
+.img img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    position: relative
+}
+
+.img img {
+    position: absolute;
+    top:0;
+    left:0;
+}

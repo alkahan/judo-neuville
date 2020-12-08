@@ -5,11 +5,16 @@ draft: false
 ---
 
 ## Présentation
-Le Taïso est une activité sportive à l’origine adressée aux judokas afin d’avoir
-une préparation physique complète pour la pratique du judo. Aujourd’hui, elle
-est pratiquée par tous : judokas, non-judokas sportifs ou non, jeunes, moins
-jeunes… Tout le monde y est le bienvenu et pourra y trouver des exercices
-adaptés à ses capacités et à ses besoins en allant à son rythme.
+Le Taïso est une préparation physique d'origine japonnaise. Il s'"écrit en kanji
+体操 où 体 signifie "le corps" et 操 dirigier/manoeuvrer. Littéralement le taiso
+signifie "bouger son corps". Pour les judokas et autres pratiquants d'arts
+martiaux, c'est la préparation physique qui précède la pratique de l'art
+martial. 
+
+Aujourd’hui, il s'agit d'une activité à part entière qui peut être pratiquée par
+tous : judokas, non-judokas sportifs ou non, jeunes, moins jeunes… Tout le monde
+y est le bienvenu et pourra y trouver des exercices adaptés à ses capacités et à
+ses besoins en allant à son rythme.
 
 ### Objectif
 Le Taïso peut avoir différents objectifs selon les personnes qui le

@@ -10,6 +10,7 @@ description: horaires et tarifs des cours de judo et taïso du club de neuville 
 
 Reprise des cours à partir du 14 septembre 2020. Possibilité de faire 2 essais gratuits pour les nouvelles inscriptions.
 
+Tarifs adaptables pour les personnes ne pouvant suivre les cours qu'une semaine sur deux.
 
 ## Cours de Judo 
 | Cours                                | Année de Naissance     | Horaires             | Tarif annuel |
