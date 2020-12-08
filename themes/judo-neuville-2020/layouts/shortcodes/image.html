@@ -1,0 +1,10 @@
+{{ $image := .Page.Resources.GetMatch (printf "%s*" (.Get "src")) }}
+{{- with $image }}
+{{ $imageSmall := .Resize "500x" }}
+<figure itemscope itemtype="http://schema.org/ImageObject" class="image">
+		<a href="{{ .Permalink }}" itemprop="contentUrl" data-size="{{ .Width }}x{{ .Height }}">
+		    <img src="{{ $imageSmall.Permalink }}" itemprop="thumbnail" alt="" class="" />
+		</a>
+</figure> 
+{{ end }}
+	</div>
