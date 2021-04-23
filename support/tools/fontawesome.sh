@@ -1,6 +1,6 @@
 #!/bin/sh
 set -ex
-icons="facebook facebook-square"
+icons="facebook facebook-square instagram instagram-square"
 
 dest=static/fontawesome
 url=https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/advanced-options/raw-svg/brands

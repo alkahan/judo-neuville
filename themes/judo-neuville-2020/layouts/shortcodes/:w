@@ -3,17 +3,14 @@
 
 {{ $maxWidth := $src.Width }}
 {{ $img := imageConfig ($src.RelPermalink | printf "content/%s" ) }}
-{{ $resized := $img }}
 
-{{ if ne (.Get "width") "" }}
-{{ $maxWidth = (.Get "width") }}
-{{ $resized = $src.Resize (printf "%sx" $maxWidth) }}
-{{ $img = imageConfig ($resized.RelPermalink | printf "resources/_gen/images/%s" ) }}
+{{ if  (.Get "width") ge 0 }}
+{{ $maxWidth := (.Get "width") }}
+{{ $resized := $src.Resize (printf "%sx" $maxWidth) }}
 {{ end }}
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
 {{ $lqipw := default "20x" }}
-{{ $xtinyw := default "300x" }}
 {{ $tinyw := default "500x" }}
 {{ $smallw := default "800x" }}
 {{ $medium1w := default "1000x" }}
@@ -23,46 +20,43 @@
 {{/* resize the src image to the given sizes */}}
 
 {{ $lqip := $src.Resize $lqipw }}
-{{ $xtiny := $src.Resize $xtinyw }}
 {{ $tiny := $src.Resize $tinyw }}
 {{ $small := $src.Resize $smallw }}
 {{ $medium1 := $src.Resize $medium1w }}
 {{ $medium := $src.Resize $mediumw }}
 {{ $large := $src.Resize $largew }}
 
+{{ printf "%#v" . }}
+{{ printf "%#v" $img }}
+{{ printf "%#v" $maxWidth }}
 
 {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 
 
-<div class="img" style="background: url(data:image/jpeg;base64,{{ $lqip.Content | base64Encode  }}); background-size: cover" style="width: {{ $img.Width }};">
+<div class="img" style="background: url(data:image/jpeg;base64,{{ $lqip.Content | base64Encode  }}); background-size: cover">
   <svg width="{{ $img.Width }}" height="{{ $img.Height }}" aria-hidden="true"></svg>
   <img
-      loading="lazy"
-    class="lazyload img-fluid"
+    class="lazyload"
     data-sizes="auto"
       {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
     data-srcset='
-               {{ if ge $maxWidth "300" }}
-               {{ with $xtiny.RelPermalink }}{{.}} 300w{{ end }}
-               {{ end }}
-               {{ if ge $maxWidth "500" }}
-               {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
-               {{ end }}
-               {{ if ge $maxWidth "800" }}
-               {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
-               {{ end }}
-               {{ if ge $maxWidth "1000" }}
-               {{ with $medium.RelPermalink }}, {{.}} 1000w{{ end }}
-               {{ end }}
-               {{ if ge $maxWidth "1200" }}
-               {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
-               {{ end }}
-               {{ if ge $maxWidth "1500" }}
-               {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
-               {{ end }}
-           '
+    {{ if ge $maxWidth "500" }}
+      {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
+    {{ end }}
+    {{ if ge $maxWidth "800" }}
+      {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
+    {{ end }}
+    {{ if ge $maxWidth "1000" }}
+      {{ with $medium.RelPermalink }}, {{.}} 1000w{{ end }}
+    {{ end }}
+    {{ if ge $maxWidth "1200" }}
+      {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
+    {{ end }}
+    {{ if ge $maxWidth "1500" }}
+      {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+    {{ end }}'
     {{ if .Get (print $medium) }}
       data-src="{{ $medium.RelPermalink }}"
     {{ else }}
@@ -75,25 +69,21 @@
           loading="lazy"
           {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}{{ end }}
           srcset='
-                   {{ if ge $maxWidth "1500" }}
-                   {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
-                   {{ end }}
-                   {{ if ge $maxWidth "1200" }}
-                   {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
-                   {{ end }}
-                   {{ if ge $maxWidth "1000" }}
-                   {{ with $medium.RelPermalink }}, {{.}} 1000w{{ end }}
+                   {{ if ge $maxWidth "500" }}
+                   {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
                    {{ end }}
                    {{ if ge $maxWidth "800" }}
                    {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
                    {{ end }}
-                   {{ if ge $maxWidth "500" }}
-                   {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
+                   {{ if ge $maxWidth "1000" }}
+                   {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
                    {{ end }}
-                   {{ if ge $maxWidth "300" }}
-                   {{ with $xtiny.RelPermalink }}{{.}} 300w{{ end }}
+                   {{ if ge $maxWidth "1000" }}
+                   {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
                    {{ end }}
-                   '
+                   {{ if ge $maxWidth "1500" }}
+                   {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+                   {{ end }}'
           {{ if .Get (print $medium) }}
           src="{{ $medium.RelPermalink }}"
           {{ else }}

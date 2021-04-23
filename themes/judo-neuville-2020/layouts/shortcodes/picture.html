@@ -1,0 +1,69 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{ $maxWidth := $src.Width }}
+{{ $img := imageConfig ($src.RelPermalink | printf "content/%s" ) }}
+{{ $resized := $img }}
+
+{{ if ne (.Get "width") "" }}
+{{ $maxWidth = (.Get "width") }}
+{{ $resized = $src.Resize (printf "%sx" $maxWidth) }}
+{{ $img = imageConfig ($resized.RelPermalink | printf "resources/_gen/images/%s" ) }}
+{{ end }}
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+
+{{ $lqipw := default "20x" }}
+{{ $xtinyw := default "300x" }}
+{{ $tinyw := default "500x" }}
+{{ $smallw := default "800x" }}
+{{ $medium1w := default "1000x" }}
+{{ $mediumw := default "1200x" }}
+{{ $largew := default "1500x" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ $lqip := $src.Resize $lqipw }}
+{{ $xtiny := $src.Resize $xtinyw }}
+{{ $tiny := $src.Resize $tinyw }}
+{{ $small := $src.Resize $smallw }}
+{{ $medium1 := $src.Resize $medium1w }}
+{{ $medium := $src.Resize $mediumw }}
+{{ $large := $src.Resize $largew }}
+
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
+<div class="img">
+    <picture alt="description of image" >
+        <!-- high-res -->
+        <source srcset="
+                        {{ $xtiny.RelPermalink }} 300w,
+                        {{ $tiny.RelPermalink }} 500w,
+                        {{ $small.RelPermalink }} 800w,
+                        {{ $medium1.RelPermalink }} 1000w,
+                        {{ $medium.RelPermalink }} 1200w,
+                        {{ $large.RelPermalink }} 1500w
+                        "
+                sizes="
+                        (min-width: 1200px) 1500w,
+                        (min-width: 1000px) 1200w,
+                        (min-width: 800px) 1000w,
+                        (min-width: 500px)  800w,
+                        (min-width: 300px)  500w,
+                        300w
+                        "
+                sizes_d="
+                        (min-width: 300px) and (max-width: 499px) 300w,
+                        (min-width: 500px) and (max-width: 799px) 500w,
+                        (min-width: 800px) and (max-width: 999px) 800w,
+                        (min-width: 1000px) and (max-width: 1199px) 1000w,
+                        (min-width: 1200px) and (max-width: 1499px) 1200w,
+                        (min-width: 1500px) 1500w
+                        "
+        >
+        <!-- Fallback content -->
+        <img src="{{ $src.RelPermalink }}" alt="description of image" class="lazyload">
+
+    </picture>
+</div>

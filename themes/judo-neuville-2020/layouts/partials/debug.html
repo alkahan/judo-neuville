@@ -1,0 +1,4 @@
+{{ printf "%#v" .Params.image }}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" .Params.image) }}
+{{ $img := imageConfig ($src.RelPermalink | printf "content/%s" ) }}
+{{ $resized := $img }}

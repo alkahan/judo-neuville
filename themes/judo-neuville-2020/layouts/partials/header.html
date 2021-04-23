@@ -1,33 +1,39 @@
-<div class="flex-column flex-md-row d-flex  header">
-    <a class="logo" href="/">
+<header classx="flex-column flex-sm-row d-flex header">
+    <a class="logo" classx="logo d-none d-md-block" href="/">
         <picture>
             <source type="image/webp" srcset="{{ "img/logo-judo.webp" | absURL}}">
             <source type="image/jpeg" srcset="{{ "img/logo-judo.jpg" | absURL}}">
-            <img class="u-logo" src="{{ "img/logo-judo.jpg" | absURL}}"></a>
+            <img class="u-logo" src="{{ "img/logo-judo.jpg" | absURL}}">
         </picture>
-        <div itemscope itemtype="https://schema.org/Organization" class="h-card flex-lg-grow-1 mx-2">
-        <div itemprop="name" class="p-name site-title">
-            Judo Club de Neuville-sur-Sarthe
+    </a>
+    <div class="aside-logo" classx="d-flex flex-column flex-fill">
+        <div id="organization" itemscope itemtype="https://schema.org/Organization" class="h-card" classx="h-card flex-sm-grow-1 mx-2">
+            <div class="organization-name" itemprop="name" classx="p-name site-title">
+                Judo Club de Neuville-sur-Sarthe
+            </div>
+            <span class="organization-address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" classx="d-none d-sm-block">
+                Salle Omnisports Yves PASQUIER<br />
+                <span itemprop="streetAddress" class="p-street-address">Rue du Stade</span><br />
+                <span itemprop="postalCode" class="p-postal-code">72190</span>
+                <span itemprop="addresslocality">Neuville-sur-Sarthe</span>
+            </span>
         </div>
-        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            Salle Omnisports Yves PASQUIER<br/>
-            <span itemprop="streetAddress" class="p-street-address">Rue du Stade</span><br/>
-            <span itemprop="postalCode" class="p-postal-code">72190</span>
-            <span itemprop="addresslocality">Neuville-sur-Sarthe</span>
-        </span>
+        <nav classx="sidebar-nav text-light nav align-self-end flex-row justify-content-center nav-pills align-items-stretch">
+            <a href="/" title="Accueil" classx="nav-link align-self-end text-light mx-2">
+                Accueil
+            </a>
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" title="{{ .Title }}" classx="nav-link align-self-end text-light mx-2">
+                {{- .Title -}}
+            </a>
+            {{ end }}
+            <a class="logo-facebook" href="https://www.facebook.com/Judoclub.NeuvillesurSarthe72190/" title="Page Facebook du club" classx="nav-link align-self-end text-light mx-2 logo-facebook">
+                {{ partial "fontawesome.html" "facebook-square" }}
+            </a>
+            <a class="logo-instagram" href="https://www.instagram.com/judoneuville/" title="Page Instagram du club" classx="nav-link align-self-end text-light mx-2 logo-instagram">
+                {{ partial "fontawesome.html" "instagram-square" }}
+            </a>
+        </nav>
     </div>
-    <nav class="sidebar-nav text-light nav align-self-end">
-        <a href="/" title="Accueil" class="nav-link align-self-end text-light mx-2">
-            Accueil
-        </a>
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" title="{{ .Title }}" class="nav-link align-self-end text-light mx-2">
-            {{- .Title -}}
-        </a>
-        {{ end }}
-        <a href="https://www.facebook.com/Judoclub.NeuvillesurSarthe72190/" title="Page Facebook du club" class="nav-link align-self-end text-light mx-2 logo-facebook"    >
-            {{ partial "fontawesome.html" "facebook-square" }}
-        </a>
-    </nav>
 
-</div>
+</header>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" style="height: 100%">
+<html lang="fr" class="no-js" style="height: 100%">
 {{- partial "head.html" . -}}
 
 <body style="height: 100%">
-    <div class="d-flex flex-column h-100">
+    <div id="body">
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
-        <div class="flex-fill flex-row row no-gutters">
+        {{- partial "featured.html" . -}}
+        <div class="hidden flex-fill flex-row row no-gutters">
             <div class="text-white col-lg align-items-center justify-content-center eveil">
                 <div class="card-item">
                     <h3>Cours Judo enfants</h3>
@@ -44,9 +45,7 @@
             </div>
         </div>
     </div>
-    <script src="{{ "js/jquery-3.5.1.slim.min.js" | absURL}}"></script>
     <script src="{{ "js/popper.min.js" | absURL}}"></script>
-    <script src="{{ "js/bootstrap.min.js" | absURL}}"></script>
     <script src="{{ "js/modernizr-custom.js" | absURL}}"></script>
 </body>
 

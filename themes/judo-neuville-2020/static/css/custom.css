@@ -1,30 +1,59 @@
-html,body {
-    color: #555;
+:root {
+  --large-breakpoint: 991px;
 }
-html, body {
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    color: #212529;
     height: 100%;
 }
 
-footer {
-    margin-top: 50px;
-    min-height: 200px;
-    background-color: #555;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #007bff;
+}
+body {
+    height: 100%;
+    color: #555;
+    color: #212529;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+}
+
+#body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+#content {
+    background-color: white;
+}
+
+
+
+
 .h-card {
 }
 
-.site-title {
-    font-size: 2em;
-    text-shadow: 2px 2px #cccccc;
-/*    background: grey 50%/ cover;
-    background-clip: text;
-    filter: invert(1) grayscale(1) contrast(1);
-    mix-blend-mode: difference;*/
-}
-
-.p-street-address, .p-locality, .p-postal-code {
-    text-shadow: 2px 2px #cccccc;
-}
 
 .card-item {
     padding: 1em;
@@ -44,10 +73,60 @@ footer {
     background-color: #555;
 }
 
-.header {
+header {
     position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
-.no-js .header::before, .no-webp .header::before {
+header nav .logo-facebook svg, header nav .logo-instagram{
+    padding: 0;
+}
+header nav a.logo-facebook {
+    width: 1.5em;
+    padding: 0;
+    color: #3b5998 !important;
+    background-color: white;
+    align-self: flex-end;
+}
+header nav a.logo-instagram {
+    width: 1.5em;
+    padding: 0;
+    align-self: flex-end;
+}
+header .aside-logo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+header .organization-name {
+    font-size: 2em;
+    text-shadow: 2px 2px #cccccc;
+}
+
+header nav {
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: stretch;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+header nav a {
+    color: #f8f9fa;
+    background-color: #555;
+    border-radius: .25rem;
+    margin: 0 .5rem ;
+    align-self: flex-end;
+    padding: .5rem 1rem;
+}
+.p-street-address, .p-locality, .p-postal-code {
+    text-shadow: 2px 2px #cccccc;
+}
+.no-js header::before, .no-webp header::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -63,7 +142,7 @@ footer {
     filter: grayscale(0) contrast(1) blur(2px);
     z-index: -1;
 }
-.webp .header::before {
+.webp header::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -79,46 +158,47 @@ footer {
     filter: grayscale(0) contrast(1) blur(2px);
     z-index: -1;
 }
-.header .logo {
+header .logo {
     z-index: 100;
+    display: none;
 }
 .no-webp .eveil, .no-js .eveil {
-    background-image: url('../img/eveil.jpg');
+    background-image: url('../img/eveil-cjpeg-q80.jpg');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .no-webp .taiso, .no-js .taiso {
-    background-image: url('../img/taiso.jpg');
+    background-image: url('../img/taiso-cjpeg-q75.jpg');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .no-webp .adulte, .no-js .adulte {
-    background-image: url('../img/adultes.jpg');
+    background-image: url('../img/adultes-cjpeg-q84.jpg');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .webp .eveil {
-    background-image: url('../img/eveil.webp');
+    background-image: url('../img/eveil-cjpeg-q80.webp');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .webp .taiso {
-    background-image: url('../img/taiso.webp');
+    background-image: url('../img/taiso-cjpeg-q75.webp');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .webp .adulte {
-    background-image: url('../img/adultes.webp');
+    background-image: url('../img/adultes-cjpeg-q84.webp');
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,26 +240,14 @@ table tr td, table tr th {
     display: inline-block;
     position: relative;
 }
-.logo-facebook svg{
-    padding: 0;
-}
-.nav a.logo-facebook {
-    width: 1.5em;
-    padding: 0;
-    margin: 0;
-    color: #3b5998 !important;
-    background-color: white;
-}
 
-body #content section aside {
-    position: sticky;
-    top: -10px;
-    align-self: start;
-}
 
 img {
     width: 100%;
     height: auto;
+    vertical-align: middle;
+    border-style: none;
+
 }
 
 .nojs .img .lazyload {
@@ -193,11 +261,199 @@ img {
 }
 
 .img {
-    position: relative
+    position: relative;
 }
 
 .img img {
-    position: absolute;
-    top:0;
-    left:0;
 }
+
+
+
+#featured {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#featured .featured-item {
+	  flex: 1;
+    position: relative;
+    padding: 0em;
+    margin: 0;
+}
+
+.featured-item  .title {
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px #555;
+    z-index: 20;
+    margin-left: 1em;
+    text-shadow: 2px 2px #555;
+}
+
+.featured-item  .img  {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.featured-item  picture img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.featured-item > p {
+    position: relative;
+    top: 1em;
+    color: white;
+    text-shadow: 2px 2px #555;
+    margin: 1em;
+    margin-top: 0;
+    bottom: 0px;
+}
+
+body div.hidden {
+    display: none !important;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#organization {
+    margin: 0px 0.5rem;
+}
+
+#organization .organization-address {
+    display: none;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Single */
+section#main {
+    max-width: 1140px;
+    width: 100%;
+    justify-content: space-around;
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#main article {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section#main aside {
+    position: sticky;
+    margin-top: 7.5rem;
+    top: 10px;
+    align-self: start;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 50px;
+    min-height: 200px;
+    background-color: #555;
+}
+
+footer div {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div.superu {
+    order: 2;
+}
+footer div.neuville-sur-sarthe {
+    order: 1;
+}
+footer div.csj72 {
+    order: 2;
+}
+footer div.ffjda {
+    order: 3;
+}
+
+@media (max-width: 991px) {
+    header {
+        flex-direction: row;
+    }
+    #featured {
+        flex-direction: column;
+    }
+}
+
+/* Extran small: <576px */
+/* SM: >= 576px */
+@media (min-width: 576px) {
+    #organization {
+        flex-grow: 1;
+    }
+    #organization .organization-address {
+        display: block;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer div.superu {
+        order: 1;
+    }
+    footer div.neuville-sur-sarthe {
+        order: 2;
+    }
+    footer div.csj72 {
+        order: 3;
+    }
+    section#main {
+        flex-direction: row;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .col {
+        padding: 0.4rem;
+    }
+}
+/* MD: >= 768px */
+@media (min-width: 991px) {
+    header .logo {
+        display: block
+    }
+}
+/* LD: >= 992px */
+@media (min-width: 992px) {
+    header {
+        flex-direction: row;
+    }
+}
+/* XL: >= 1200px */
