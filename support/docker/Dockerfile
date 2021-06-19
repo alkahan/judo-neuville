@@ -11,6 +11,7 @@ RUN mkdir -p /usr/src/app
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
+RUN chmod -R o+r /usr/src/app/
 
 RUN /hugo
 
