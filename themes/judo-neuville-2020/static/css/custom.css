@@ -26,6 +26,7 @@ h6 {
 h1 {
     font-size: clamp(15px, 4.242rem, 10vw);
 }
+
 h2 {
     font-size: clamp(15px, 2.828rem, 10vw);
 }
@@ -88,15 +89,29 @@ body {
     text-shadow: 2px 2px #555;
 }
 
-.nav-link {
+/*.nav-link {
     background-color: #555;
-}
+}*/
 
 header {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    overflow: hidden;
+    min-height: 100px;
+    grid-template:
+        "menu menu menu" 40px
+        "logo aside-logo aside-logo" 160px / 280px 1fr 1fr;
 
+}
+
+header #menu {
+    grid-area: menu;
+}
+header a.logo {
+    grid-area: logo;
+}
+header div.aside-logo {
+    grid-area: aside-logo;
 }
 
 header nav .logo-facebook svg,
@@ -128,7 +143,7 @@ header .aside-logo {
 
 header .organization-name {
     font-size: 1em;
-    text-shadow: 2px 2px #cccccc;
+    /*    text-shadow: 2px 2px #cccccc;*/
 }
 
 header nav {
@@ -146,20 +161,31 @@ header nav {
 
 header nav a {
     color: #f8f9fa;
-    background-color: #555;
+    color: #020304;
+    /*background-color: #555;*/
     border-radius: .25rem;
     margin: 0 .5rem;
     align-self: flex-end;
     padding: .5rem 1rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020304;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    font-size: clamp(11px, 11px + 1vw, 18px);
+    padding: 0 clamp(0.2rem, 0.2rem + 1vw, 2rem);
+    margin: 0 clamp(0rem, 0rem + 1vw, 0.5rem);
 }
 
-.p-street-address,
+/*.p-street-address,
 .p-locality,
 .p-postal-code {
     text-shadow: 2px 2px #cccccc;
-}
+}*/
 
-.no-js header::before,
+/*.no-js header::before,
 .no-webp header::before {
     content: "";
     position: absolute;
@@ -175,7 +201,7 @@ header nav a {
     background-color: black;
     filter: grayscale(1) contrast(1);
     opacity: 0.3;*/
-    filter: grayscale(0) contrast(1) blur(2px);
+/*    filter: grayscale(0) contrast(1) blur(2px);
     z-index: -1;
 }
 
@@ -194,9 +220,9 @@ header nav a {
     background-color: black;
     filter: grayscale(1) contrast(1);
     opacity: 0.3;*/
-    filter: grayscale(0) contrast(1) blur(2px);
+/*    filter: grayscale(0) contrast(1) blur(2px);
     z-index: -1;
-}
+}*/
 
 header .logo {
     z-index: 100;
@@ -257,6 +283,7 @@ header .logo {
 
 table {
     width: 100%;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
 }
 
 th {
@@ -478,6 +505,7 @@ footer div.ffjda {
     #organization {
         flex-grow: 1;
     }
+
     header .organization-name {
         font-size: 2em;
     }
@@ -514,13 +542,28 @@ footer div.ffjda {
     .col {
         padding: 0.4rem;
     }
+
+    header .logo {
+        display: block;
+    }
+
+    header .logo #text-judo,
+    header .logo #text-club,
+    header .logo #text-neuville {
+        display: none;
+    }
 }
 
 /* MD: >= 768px */
-@media (min-width: 991px) {
+@media (min-width: 768px) {
     header .logo {
         display: block
     }
+
+    header .organization-name {
+        display: none;
+    }
+
 }
 
 /* LD: >= 992px */
@@ -534,10 +577,9 @@ footer div.ffjda {
 
 
 #menu {
-    position: relative;
     font-size: clamp(100%, 1rem + 2vw, 18px);
-    align-self: flex-end;
 }
+
 #menu input {
     display: none;
 }
@@ -599,26 +641,33 @@ footer div.ffjda {
         border: 1px solid white;
         background-color: white;
     }
+
     #menu input+label svg text.text-menu {
         opacity: 1;
     }
+
     #menu input+label svg text.text-close {
         opacity: 0;
     }
+
     #menu input:checked+label svg text.text-menu {
         opacity: 0;
     }
+
     #menu input:checked+label svg text.text-close {
         opacity: 1;
     }
-    #menu input:checked+label svg  {
+
+    #menu input:checked+label svg {
         border: 1px solid black;
     }
+
     #menu input+label svg text {
         font: bold 30px sans-serif;
         width: 100%;
         text-align: center;
     }
+
     #menu input+label svg path.line {
         fill: none;
         stroke: #000;

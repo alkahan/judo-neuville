@@ -1,9 +1,37 @@
 <header>
+    <div id="menu">
+        <input id="burger" type="checkbox" />
+        <label for="burger">
+            <svg width="35" height="40" viewBox="0 0 100 100">
+                <g>
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </g>
+                <text class="text text-menu" y="105" x="5" text-align="center" textLength="90">Menu</text>
+                <text class="text text-close" y="105" x="5" text-align="center" textLength="90">Fermer</text>
+            </svg>
+        </label>
+        <nav>
+            <a href="/" title="Accueil" classx="nav-link align-self-end text-light mx-2">
+                Accueil
+            </a>
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" title="{{ .Title }}" classx="nav-link align-self-end text-light mx-2">
+                {{- .Title -}}
+            </a>
+            {{ end }}
+            <a class="logo-facebook" href="https://www.facebook.com/Judoclub.NeuvillesurSarthe72190/" title="Page Facebook du club" classx="nav-link align-self-end text-light mx-2 logo-facebook">
+                {{ partial "fontawesome.html" "facebook-square" }}
+            </a>
+            <a class="logo-instagram" href="https://www.instagram.com/judoneuville/" title="Page Instagram du club" classx="nav-link align-self-end text-light mx-2 logo-instagram">
+                {{ partial "fontawesome.html" "instagram-square" }}
+            </a>
+        </nav>
+    </div>
     <a class="logo" href="/">
         <picture>
-            <source type="image/webp" srcset="{{ "img/logo-judo.webp" | absURL}}">
-            <source type="image/jpeg" srcset="{{ "img/logo-judo.jpg" | absURL}}">
-            <img class="u-logo" src="{{ "img/logo-judo.jpg" | absURL}}">
+            <img class="u-logo" src="{{ "img/logo.svg" | absURL}}">
         </picture>
     </a>
     <div class="aside-logo">
@@ -25,36 +53,6 @@
             ☎ <a class="p-telephone" href="tel:0640767055" itemprop="telephone">06 40 76 70 55</a>
             📧 <a class="p-email" href="mailto:judoclub.neuvillesursarthe@yahoo.fr" itemprop="email">judoclub.neuvillesursarthe@yahoo.fr</a>
 
-        </div>
-        <div id="menu">
-            <input id="burger" type="checkbox" />
-            <label for="burger">
-                <svg width="35" height="40" viewBox="0 0 100 100">
-                    <g>
-                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                    </g>
-                    <text class="text text-menu" y="105" x="5" text-align="center" textLength="90" >Menu</text>
-                    <text class="text text-close" y="105" x="5" text-align="center" textLength="90">Fermer</text>
-                </svg>
-            </label>
-            <nav>
-                <a href="/" title="Accueil" classx="nav-link align-self-end text-light mx-2">
-                    Accueil
-                </a>
-                {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" title="{{ .Title }}" classx="nav-link align-self-end text-light mx-2">
-                    {{- .Title -}}
-                </a>
-                {{ end }}
-                <a class="logo-facebook" href="https://www.facebook.com/Judoclub.NeuvillesurSarthe72190/" title="Page Facebook du club" classx="nav-link align-self-end text-light mx-2 logo-facebook">
-                    {{ partial "fontawesome.html" "facebook-square" }}
-                </a>
-                <a class="logo-instagram" href="https://www.instagram.com/judoneuville/" title="Page Instagram du club" classx="nav-link align-self-end text-light mx-2 logo-instagram">
-                    {{ partial "fontawesome.html" "instagram-square" }}
-                </a>
-            </nav>
         </div>
     </div>
 
