@@ -8,7 +8,6 @@ resources:
   title: image-title-:counter
 ---
 
-{{< picture src="images/taiso.jpg" alt="taiso" width="500" >}}
-
+Entretient et préparation physique à partir de 14 ans
 
 

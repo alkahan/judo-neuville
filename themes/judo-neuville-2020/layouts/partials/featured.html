@@ -3,8 +3,7 @@
 {{ range (where site.RegularPages "Type" "featured")}}
     <div class="featured-item">
         <h3 class="title">{{ .Title }}</h3>
-        <p>{{ .Description }}</p>
-        {{ partial "picture.html" . }}
+        <p>{{ .Content }}</p>
     </div>
 {{ end }}
 </div>

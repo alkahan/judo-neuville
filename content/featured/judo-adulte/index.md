@@ -1,6 +1,6 @@
 ---
 title: "Cours Judo adultes"
-draft: false
+draft: true
 image: "images/adultes.jpg"
 description: "Découvrir le judo à 50 ans, reprendre après 20 ans d'arrêt ou pour les confirmés, le cours adulte s'adresse à tous."
 resources: 
