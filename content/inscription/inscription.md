@@ -11,58 +11,74 @@ menu:
 
 L'adhésion au club de Judo comprend la cotisation du club ainsi que la licence
 de la FFJDA. La licence fédérale inclut une
-[assurance](https://www.ffjudo.com/notice_assurance) pour la pratique du Judo.
+[assurance](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Affiche%20information-JUDO%202020%202021.pdf)
+pour la pratique du Judo et disciplines associées. Par ailleurs, la FFJDA
+propose une assurance complémentaire optionnelle à laquelle vous pouvez
+souscrire en retournant [le bulletin de
+souscription](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Bulletin%20de%20souscription%20IA%20Compl%C3%A9mentaire%202020%202021.pdf)
+et dont vous pouvez consulter les [garanties
+complémentaires](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Notice%20information%20garanties%20compl%C3%A9mentaires%20FFJDA%202020%202021.pdf).
 
 L'adhésion est considérée comme complète lorsque:
-- la demande de licence a été faite
-- le formulaire d'inscription rempli, daté et signé nous a été transmis
+- la demande de licence a été faite auprès de la FFJDA.
+- le formulaire d'inscription rempli, daté et signé nous a été transmis avec les mentions obligatoires (validation du règlement intérieur, attestation QS sport) 
 - les cotisations sont payées
-- le certificat médical ou l'attestation "QS-SPORT" nous a été transmis
+- le certificat médical nous a été transmis dans le cas où cela est nécessaire.
 
 Vous pouvez nous transmettre les différents documents par mail à l'adresse
 judoclub.neuvillesursarthe@yahoo.fr ou en main propre.
 
 **Modalités de paiement**: CB en ligne, chèque, espèce, bon CAF, coupon sport, chèque vacances, chèque collège
 
-## Certificat Médical
-Le certificat médical doit attester de l'absence de contre-indication à la
-pratique du sport en compétition.
+## Certificat Médical / attestation
 
 De préférence, utilisez le document **[Certificat
   Médical](https://drive.google.com/file/d/0B2I1jJYO2qirNFhEZGh5TEl3NFE/view)**
- qui est fourni en lien plus bas.
+  qui est fourni en lien plus bas.
 
-- Pour **une nouvelle inscription**, le certificat médical doit dater de
-moins d'un an.
+### Pour les mineurs
+
+Depuis le 8 mai 2021 (décret du 7 mai 2021 n° 2021-564) le certificat médical
+pour les mineurs n'est plus obligatoire.
+
+Dans la mesure du possible l'enfant doit répondre au [Questionnaire relatif à
+l'état de santé du sportif
+mineur](https://fr.calameo.com/read/003279326e1480f5e3975?view=slide&page=1). Si
+il a répondu à non à toutes les questions, il vous suffit d'en attester sur le
+formulaire d'inscription. 
+
+Dans le cas où toutes les réponses ne sont pas négatives, il faudra fournir un
+certificat médical datant de moins de 6 mois.
+
+### Pour les majeurs
+
+- Pour **une nouvelle inscription**, le certificat médical doit dater de moins
+de 6 mois.
 - Pour **un renouvellement sans discontinuité**, le certificat médical doit
 dater de moins de 3 ans. Je réponds alors au **[Questionnaire
-"QS-SPORT"](http://dev.licences-ffjudo.com/FFJDA_licences/Documents/QS-SPORT%20cerfa_15699.pdf)**
-, et si
-j'ai répondu par la négative à l'ensemble des rubriques du questionnaire, je
-retourne l'
-**[Attestation
-"QS-SPORT"](https://dev.licences-ffjudo.com/espacelicence/Fichiers/ATTESTATION%20QS%20sport.pdf)**
-. Dans le cas contraire je fournis un nouveau
-certificat médical.
+"QS-SPORT" (cerfa n°15699*01)](http://dev.licences-ffjudo.com/FFJDA_licences/Documents/QS-SPORT%20cerfa_15699.pdf)**
+, et si j'ai répondu par la négative à l'ensemble des rubriques du
+questionnaire, j'en atteste sur le formulaire d'inscription. Dans le cas
+contraire je fournis un nouveau certificat médical.
 
 ## Équipement personnel
-- Judogi
-- Zoris, Tongs ou Claquettes : pour marcher en dehors du tatami
+- Judogi (que vous pouvez acheter d'occasion ou dans les grandes surfaces spécialisées en sport)
+- Zoris, Tongs ou Claquettes : pour marcher dans le Dojo en dehors du tatami
 - Gourde ou bouteille d’eau
 
 Pour les jeunes judokas qui débutent et qui n'ont pas encore de judogi, ils
 peuvent venir en jogging sans fermeture éclair.
 
-**Conseil d'achat** : les tailles des Judogis sont exprimés en cm. Il faut
-prendre la taille du judoka arrondie à la dizaine supérieure. Exemple: pour un
-enfant de 122cm, il faut prendre un Judogi de 130cm. Un adulte de 185cm doit
-prendre un Judogi de 190cm.
+**Conseil d'achat** : les tailles des Judogis sont exprimés en cm tous les 10cm
+(130cm, 140cm, 150cm, 160cm, ...). Il faut prendre la taille du judoka arrondie
+à la dizaine supérieure. Exemple: pour un enfant de 122cm, il faut prendre un
+Judogi de 130cm. Un adulte de 185cm doit prendre un Judogi de 190cm.
 
 ## Protocole Covid19
 - avant d’entrer dans les locaux, les pratiquants veillent à s’être douchés,
   cheveux lavés, ongles coupés et porter un judogi propre.
-- les vestiaires sont fermés, les pratiquants doivent donc arriver en tenue
-- dès l'entrée du gymnase, le port du masque est obligatoire pour les personnes de plus de 11 ans
+- dès l'entrée du gymnase, le port du masque est obligatoire pour les personnes
+  de plus de 11 ans
 - les cours se déroulent à huis clos. Les parents ou accompagnateurs ne sont
   donc pas autorisés à pénétrer dans le Dojo.
 - les pieds et les mains doivent être désinfectés avant la montée sur les
@@ -73,12 +89,15 @@ prendre un Judogi de 190cm.
 
 ## Documents utiles
 Pour référence voici les différents documents dont vous pouvez avoir besoin:
-* [Certificat Médical](https://drive.google.com/file/d/0B2I1jJYO2qirNFhEZGh5TEl3NFE/view)
+* [Certificat Médical type](https://drive.google.com/file/d/0B2I1jJYO2qirNFhEZGh5TEl3NFE/view)
 * [Questionnaire "QS-SPORT"](http://dev.licences-ffjudo.com/FFJDA_licences/Documents/QS-SPORT%20cerfa_15699.pdf)
 * [Attestation "QS-SPORT"](https://dev.licences-ffjudo.com/espacelicence/Fichiers/ATTESTATION%20QS%20sport.pdf)
-* [Notice d'assurance](https://www.ffjudo.com/notice_assurance)
+* [Notice d'assurance](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Affiche%20information-JUDO%202020%202021.pdf)
+* [Bulletin de souscription à l'assurance complémentaire](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Bulletin%20de%20souscription%20IA%20Compl%C3%A9mentaire%202020%202021.pdf)
+* [Garanties complémentaires](https://www.ffjudo.com/uploads/elfinder/JURIDIQUE/ASSURANCES/2020/Notice%20information%20garanties%20compl%C3%A9mentaires%20FFJDA%202020%202021.pdf).
 * [Statut de l'association](https://judo-neuville.eu.org/association/statut "Statut")
 * [Règlement intérieur de l'association](https://judo-neuville.eu.org/association/reglement-interieur "Règlement intérieur du club")
+
 
 ## Je démarre mon inscription
 
@@ -122,7 +141,7 @@ Ensuite rendez-vous sur notre page HelloAsso pour procéder au paiement.
 son financement. Vous êtes libre de modifier cette contribution et de la
 mettre à 0 si vous le souhaitez.
 
-[https://www.helloasso.com/associations/judo-club-neuville-sarthe/adhesions/saison-2020-2021](https://www.helloasso.com/associations/judo-club-neuville-sarthe/adhesions/saison-2020-2021)
+[https://www.helloasso.com/associations/judo-club-neuville-sarthe/adhesions/saison-2021-2022](https://www.helloasso.com/associations/judo-club-neuville-sarthe/adhesions/saison-2021-2022)
 
 
 Pour les familles qui inscrivent plusieurs de leurs membres, vous pouvez

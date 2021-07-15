@@ -31,8 +31,6 @@ forme.
 
 Actuellement les cours sont assurés par Aurélie Launay et Perrine Jamaux
 
-
-
 {{<container>}}
 {{<row>}}
 {{<col>}}
@@ -43,9 +41,6 @@ Actuellement les cours sont assurés par Aurélie Launay et Perrine Jamaux
 {{</col>}}
 {{</row>}}
 {{</container>}}
-
-
-
 
 
 * [Les statuts]({{< ref "association/statut.md" >}} "Statut")
