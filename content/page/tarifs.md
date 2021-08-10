@@ -20,7 +20,7 @@ Les cours sont assurés les vendredis 09/07, 16/07, 23/07, 30/07, 13/08, 20/08, 
 
 
 ## Cours de Judo 
-Reprise des cours mercredi 1er septembre 2021. Possibilité de faire 2 essais gratuits pour les nouvelles inscriptions ou 3 séances pour les enfants inscrits au dispositif "Carte Passerelle".
+Reprise des cours jeudi 2 septembre 2021. Possibilité de faire 2 essais gratuits pour les nouvelles inscriptions ou 3 séances pour les enfants inscrits au dispositif "Carte Passerelle".
 
 Tarifs adaptables pour les personnes ne pouvant suivre les cours qu'une semaine sur deux.
 
