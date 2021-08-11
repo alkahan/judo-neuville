@@ -85,6 +85,10 @@ Judogi de 130cm. Un adulte de 185cm doit prendre un Judogi de 190cm.
   tatamis.
 - une fois monté sur les tatamis, le masque peut être retiré et mis dans un
   sachet plastique.
+  
+Dès la rentrée, les pratiquants de 18 ans et plus devrons ne pourrons accéder
+aux cours que sur présentation d'un pass sanitaire valide. Le « pass sanitaire »
+sera obligatoire pour les mineurs âgés de 12 à 17 ans à compter du 30 septembre.
 
 
 ## Documents utiles
