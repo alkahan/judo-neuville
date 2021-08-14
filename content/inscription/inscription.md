@@ -128,11 +128,8 @@ le formulaire.
 
 [https://inscription.judo-neuville.eu.org](https://inscription.judo-neuville.eu.org)
 
-A la validation de celui-ci, une fiche d'inscription PDF
-sera générée avec les informations que vous aurez renseignées.
-
-Il vous suffira alors de l'imprimer et de l'apporter au club, ou de nous le
-renvoyer par mail daté et signé à l'adresse judoclub.neuvillesursarthe@yahoo.fr.
+A la validation de celui-ci, votre fiche d'inscription avec les informations que
+vous aurez renseignées vous sera envoyé par mail ainsi qu'une copie au club.
 
 ### étape 3 : paiement en ligne
 
