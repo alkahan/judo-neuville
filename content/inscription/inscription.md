@@ -1,5 +1,5 @@
 ---
-title: "Inscription"
+title: "Inscription saison 2021/2022"
 draft: false
 toc: true
 menu:
