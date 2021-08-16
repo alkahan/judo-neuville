@@ -43,7 +43,7 @@ plus de 14 ans peuvent également participer aux cours de Taïso.
 
 | Cours | Année de Naissance | Horaires             | Tarif annuel |
 |-------|--------------------|----------------------|--------------|
-| Taïso | 2005 et avant      | Vendredi 19h30-20h30 | 149€         |
+| Taïso | 2007 et avant      | Vendredi 19h30-20h30 | 149€         |
 
 
 Modalités de paiement: CB en ligne, chèque, espèce, bon CAF, coupon sport, chèque vacances, chèque collège
