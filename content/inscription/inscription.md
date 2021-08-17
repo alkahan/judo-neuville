@@ -6,6 +6,9 @@ menu:
   main:
     title: "Inscription"
     weight: 130
+resources: 
+- src: "images/*.jpg"
+  title: image-title-:counter
 ---
 
 
@@ -65,6 +68,16 @@ contraire je fournis un nouveau certificat médical.
 - Judogi (que vous pouvez acheter d'occasion ou dans les grandes surfaces spécialisées en sport)
 - Zoris, Tongs ou Claquettes : pour marcher dans le Dojo en dehors du tatami
 - Gourde ou bouteille d’eau
+{{<container>}}
+{{<row>}}
+{{<col>}}
+{{< picture src="images/zori.jpg" alt="zori" width="200" >}}
+{{</col>}}
+{{<col>}}
+{{< picture src="images/judogi.jpg" alt="Judogi"  width="200" >}}
+{{</col>}}
+{{</row>}}
+{{</container>}}
 
 Pour les jeunes judokas qui débutent et qui n'ont pas encore de judogi, ils
 peuvent venir en jogging sans fermeture éclair.
