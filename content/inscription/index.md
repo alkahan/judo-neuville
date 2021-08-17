@@ -7,7 +7,7 @@ menu:
     title: "Inscription"
     weight: 130
 resources: 
-- src: "images/*.jpg"
+- src: "images/*.svg"
   title: image-title-:counter
 ---
 
@@ -71,10 +71,13 @@ contraire je fournis un nouveau certificat médical.
 {{<container>}}
 {{<row>}}
 {{<col>}}
-{{< picture src="images/zori.jpg" alt="zori" width="200" >}}
+<img src="images/judogi.svg" alt="Judogi"  width="100px" >
 {{</col>}}
 {{<col>}}
-{{< picture src="images/judogi.jpg" alt="Judogi"  width="200" >}}
+<img src="images/zori.svg" alt="zori" width="100px" >
+{{</col>}}
+{{<col>}}
+<img src="images/bottle.svg" alt="zori" width="100px" >
 {{</col>}}
 {{</row>}}
 {{</container>}}
