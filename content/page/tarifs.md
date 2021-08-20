@@ -1,6 +1,7 @@
 ---
 title: "Saison 2021 / 2022"
 draft: false
+toc: true
 menu:
   main:
     title: "Horaires/Tarifs"
@@ -47,3 +48,38 @@ plus de 14 ans peuvent également participer aux cours de Taïso.
 
 
 Modalités de paiement: CB en ligne, chèque, espèce, bon CAF, coupon sport, chèque vacances, chèque collège
+
+## Financer sa licence 
+Cette année il y aura de nombreuses possibilités pour financer sa licence:
+   
+### Remise sur les réabonnements
+      
+Comme nous en avions parlé lors de l'assemblée générale, nous allons faire une
+remise de 30€ sur nos tarifs pour les réinscriptions. Pour ceux qui feront un
+paiement en ligne, les 30€ seront remboursées par chèque ou par virement
+bancaire. Les nouvelles adhésions ne sont pas concernées.
+
+### Super U avec vous pour le sport
+      
+L'opération "Super U Avec vous pour le sport" est reconduite et vous permet de
+payer votre licence à l'aide de ces bons dans la limite de 20€.
+
+### application  "Gomypartner"
+      
+A travers l'application "Gomypartner" vous pouvez aussi obtenir 10€ de
+remboursement sur votre licence jusqu'au 17 octobre.
+   
+"Gomypartner" est une application qui vous permet de constituer une cagnotte
+que vous pouvez utiliser pour vos achats d'équipement sportif. Vous scannez les
+tickets de caisses de vos achats en provenances des 5000 marchands partenaires
+pour alimenter votre cagnotte que vous pouvez utiliser pour payer votre licence,
+les projets du clubs, ou transférer sur votre compte en banque.
+
+[Télécharger l'application Gomypartner](https://gomypartner.com/)
+
+Le code parrainage suivant permet de rattacher votre compte au club : CzZrT
+
+### Pass'Sport
+      
+Le "Pass'sport" mis en place par le gouvernement et d'une valeur de 50€ permet
+aux familles éligibles de payer leur licence sportive avec.
