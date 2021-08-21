@@ -170,7 +170,7 @@ se fait qu'une seule fois.
 
 ### étape 1: demande de licence
 
-Suivez les instructions sur la page : [procéder à la demande de Licence](https://judo-neuville.eu.org/inscription/licence-ffjda "Demande de Licence FFJDA")
+Suivez les instructions sur la page : [procéder à la demande de Licence]({{< ref "licence-ffjda">}}) "Demande de Licence FFJDA"
 
 ### étape 2 : inscription en ligne
 
