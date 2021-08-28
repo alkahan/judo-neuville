@@ -11,6 +11,7 @@ staticDir = ["static"]
 resampleFilter = "lanczos"
 
 [markup]
+    defaultMarkdownHandler = "goldmark"
   [markup.blackFriday]
     angledQuotes = false
     footnoteAnchorPrefix = ""
@@ -42,5 +43,5 @@ resampleFilter = "lanczos"
       autoHeadingIDType = "github"
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
