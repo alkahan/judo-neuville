@@ -45,6 +45,15 @@ Modalités de paiement: CB en ligne, chèque, espèce, bon CAF, coupon sport, ch
 
 ## Financer sa licence 
 Cette année il y aura de nombreuses possibilités pour financer sa licence:
+
+| Dispositif           | Pour Qui ?                         | Quelle Condition                  | Montant Max |
+|----------------------|------------------------------------|-----------------------------------|-------------|
+| Remise Club          | les licenciés au club en 2020-2021 | Aucune                            | 30 €        |
+| Super U              | Tous                               | 5€ tous les 50€ d'achat           | 20 €        |
+| Gomypartner          | Tous                               | Créer un compte sur l'application | 10 €        |
+| Pass'Sport           | Personnes élligibles               | Conditions de revenu              | 50 €        |
+| e-pass Culture Sport | Ligériens                          | Les jeunes de 15 à 19 ans         | 32 €        |
+| Total                |                                    |                                   | 142 €       |
    
 ### Remise sur les réabonnements
       
@@ -77,3 +86,13 @@ Le code parrainage suivant permet de rattacher votre compte au club : CzZrT
       
 Le "Pass'sport" mis en place par le gouvernement et d'une valeur de 50€ permet
 aux familles éligibles de payer leur licence sportive avec.
+
+### e-pass Culture Sport 
+
+Pour 8 €, accédez à plus de 200€ d'avantages dont 32€ pour votre licence.
+
+S'adresse à tous les jeunes de 15 à 19 ans habitant en Pays de la Loire, et sans
+limite d’âge pour les jeunes scolarisés en lycée, CFA, MFR, IME ou établissement
+d’enseignement supérieur.
+
+[Commandez votre e-pass Culture Sport](https://www.epassjeunes-paysdelaloire.fr/culture-sport/)
