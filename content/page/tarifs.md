@@ -8,7 +8,6 @@ menu:
     weight: 130
 description: horaires et tarifs des cours de judo et taïso du club de neuville sur sarthe
 ---
-
 Depuis le 9 août, le "Pass sanitaire" est obligatoire pour l'accès aux séances pour les personnes
 majeurs. Il sera obligatoire pour les enfants de plus de 12 ans dès le 30 septembre
 2021.
@@ -21,7 +20,7 @@ Possibilité de faire 2 essais gratuits pour les nouvelles inscriptions ou 3 sé
 
 Tarifs adaptables pour les personnes ne pouvant suivre les cours qu'une semaine sur deux ou autre (horaires de travail, garde alternée...).
 
-**Les tarifs inclus l'adhésion, la licence fédérale et l'assurance**
+**Les tarifs inclus l'adhésion, la licence fédérale et l'assurance et permettent de payer les professeurs.**
 
 | Cours                                | Année de Naissance     | Horaires             | Tarif annuel |
 |--------------------------------------|------------------------|----------------------|--------------|
