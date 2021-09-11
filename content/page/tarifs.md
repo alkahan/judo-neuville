@@ -28,7 +28,7 @@ Tarifs adaptables pour les personnes ne pouvant suivre les cours qu'une semaine 
 | Mini-Poussin                         | 2015 et 2014           | Mercredi 11h00-12h00 | 169€         |
 | Poussins / Benjamins                 | 2013, 2012, 2011, 2010 | Jeudi 18h30-20h00    | 185€         |
 | Minimes / Cadets / Juniors / Séniors | 2009 et avant          | Jeudi 20h00-21h30    | 185€         |
-| Minimes / Cadets / Juniors / Séniors | 2009 et avant          | Vendredi 20h30-21h00 | 185€         |
+| Minimes / Cadets / Juniors / Séniors | 2009 et avant          | Vendredi 21h00-21h30 | 185€         |
 
 Les personnes inscrites au cours Judo Mimines / Cadets / Juniors / Séniors de
 plus de 14 ans peuvent également participer aux cours de Taïso.
@@ -37,7 +37,7 @@ plus de 14 ans peuvent également participer aux cours de Taïso.
 
 | Cours | Année de Naissance | Horaires             | Tarif annuel |
 |-------|--------------------|----------------------|--------------|
-| Taïso | 2007 et avant      | Vendredi 19h30-20h30 | 149€         |
+| Taïso | 2007 et avant      | Vendredi 20h00-21h00 | 149€         |
 
 
 Modalités de paiement: CB en ligne, chèque, espèce, bon CAF, coupon sport, chèque vacances, chèque collège
