@@ -35,6 +35,8 @@ plus de 14 ans peuvent également participer aux cours de Taïso.
 
 ##  Cours de Taïso
 
+**Attention : changement d'horaire par rapport à ceux indiqués sur les flyers qui ont été distribués**
+
 | Cours | Année de Naissance | Horaires             | Tarif annuel |
 |-------|--------------------|----------------------|--------------|
 | Taïso | 2007 et avant      | Vendredi 20h00-21h00 | 149€         |
