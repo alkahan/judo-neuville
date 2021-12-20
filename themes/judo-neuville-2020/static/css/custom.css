@@ -1,64 +1,3 @@
-:root {
-    --large-breakpoint: 991px;
-}
-
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-html {
-    color: #555;
-    color: #212529;
-    height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
-}
-
-h1 {
-    font-size: clamp(15px, 4.242rem, 10vw);
-}
-
-h2 {
-    font-size: clamp(15px, 2.828rem, 10vw);
-}
-
-svg {
-    overflow: hidden;
-    vertical-align: middle;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-a:hover {
-    color: #007bff;
-}
-
-body {
-    height: 100%;
-    color: #555;
-    color: #212529;
-/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    /*font-weight: 400;*/
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    margin: 0;
-}
 
 #body {
     height: 100%;
@@ -72,42 +11,12 @@ body {
     background-color: white;
 }
 
-#frontpage {
-    display: grid;
-    grid-area: frontpage;
-}
-
-#frontpage #judo ul li {
-    font-family: cursive;
-    line-height: 2rem;
-}
-
-#taiso {
-    background-color: #4d4d4d;
-    background-image: url("../img/taiso.svg") ;
-    background-position: top left;
-    background-repeat: 100% 100% ;
-    background-size: cover;
-    color: #eee;
-}
-#taiso h1 {
-    color: #00ffff;
-    text-align: center;
-    font-weight: 800;
-    font-stretch: 200%;
-    font-variant-caps: titling-caps;
-    text-shadow: 2px 2px 0 #FF00FF;
-}
-#taiso p {
-    text-align: center;
-}
 
 .h-card {}
 
-
 .card-item {
     padding: 1em;
-    posititon: relative;
+    position: relative;
 }
 
 .card-item h3 {
@@ -119,146 +28,6 @@ body {
     text-shadow: 2px 2px #555;
 }
 
-/*.nav-link {
-    background-color: #555;
-}*/
-
-header {
-    position: relative;
-    display: grid;
-    overflow: hidden;
-    min-height: 100px;
-    grid-area: header;
-    grid-template:
-        "menu menu menu" 40px
-        "logo aside-logo aside-logo" 160px / 280px 1fr 1fr;
-
-}
-
-header #menu {
-    grid-area: menu;
-}
-header a.logo {
-    grid-area: logo;
-}
-header div.aside-logo {
-    grid-area: aside-logo;
-}
-
-header nav .logo-facebook svg,
-header nav .logo-instagram {
-    padding: 0;
-}
-
-header nav a.logo-facebook {
-    width: 1.5em;
-    padding: 0;
-    color: #3b5998 !important;
-    background-color: white;
-    align-self: flex-end;
-    box-sizing: content-box;
-}
-
-header nav a.logo-instagram {
-    width: 1.5em;
-    padding: 0;
-    align-self: flex-end;
-    box-sizing: content-box;
-}
-
-header .aside-logo {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-header .organization-name {
-    font-size: 1em;
-    /*    text-shadow: 2px 2px #cccccc;*/
-}
-
-header nav {
-    flex-direction: row;
-    align-self: flex-end;
-    align-items: stretch;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    position: relative;
-}
-
-header nav a {
-    color: #f8f9fa;
-    color: #020304;
-    /*background-color: #555;*/
-    border-radius: .25rem;
-    margin: 0 .5rem;
-    align-self: flex-end;
-    padding: .5rem 1rem;
-
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #020304;
-    font-weight: 700;
-    font-family: sans-serif;
-    display: block;
-    font-size: clamp(11px, 11px + 1vw, 18px);
-    padding: 0 clamp(0.2rem, 0.2rem + 1vw, 2rem);
-    margin: 0 clamp(0rem, 0rem + 1vw, 0.5rem);
-}
-
-/*.p-street-address,
-.p-locality,
-.p-postal-code {
-    text-shadow: 2px 2px #cccccc;
-}*/
-
-/*.no-js header::before,
-.no-webp header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-color: #cccccc;
-    background-color: black;
-    filter: grayscale(1) contrast(1);
-    opacity: 0.3;*/
-/*    filter: grayscale(0) contrast(1) blur(2px);
-    z-index: -1;
-}
-
-.webp header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/header.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-color: #cccccc;
-    background-color: black;
-    filter: grayscale(1) contrast(1);
-    opacity: 0.3;*/
-/*    filter: grayscale(0) contrast(1) blur(2px);
-    z-index: -1;
-}*/
-
-header .logo {
-    z-index: 100;
-    display: none;
-}
 
 .no-webp .eveil,
 .no-js .eveil {
@@ -312,27 +81,6 @@ header .logo {
 }
 
 
-table {
-    width: 100%;
-    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
-}
-
-th {
-    background-color: #555;
-    color: #eee;
-}
-
-tr {}
-
-tr:nth-child(even) {
-    background: #eee
-}
-
-
-table tr td,
-table tr th {
-    padding: 0.5em;
-}
 
 .stretched-link::after {
     position: absolute;
@@ -352,13 +100,6 @@ table tr th {
 }
 
 
-img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
-
-}
 
 .nojs .img .lazyload {
     display: none;
@@ -375,53 +116,7 @@ img {
     position: relative;
 }
 
-.img img {}
 
-
-
-#featured {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    font-family: sans;
-    font-weight: 200;
-}
-
-#featured .featured-item {
-    flex: 1;
-    position: relative;
-    padding: 0em;
-    margin: 0;
-}
-
-.featured-item .title {
-    position: relative;
-    z-index: 20;
-    margin-left: 1em;
-}
-
-.featured-item .img {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.featured-item picture img {
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
-
-.featured-item>p {
-    position: relative;
-    top: 1em;
-    margin: 1em;
-    margin-top: 0;
-    bottom: 0px;
-}
 
 body div.hidden {
     display: none !important;
@@ -431,15 +126,6 @@ body div.hidden {
     display: flex;
     flex-direction: column;
 
-
-}
-
-#organization {
-    margin: 0px 0.5rem;
-}
-
-#organization .organization-address {
-    display: none;
 
 }
 
@@ -481,41 +167,7 @@ section#main aside {
 }
 
 
-/* FOOTER */
 
-footer {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-top: 50px;
-    min-height: 200px;
-    background-color: #555;
-}
-
-footer div {
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer div.superu {
-    order: 2;
-}
-
-footer div.neuville-sur-sarthe {
-    order: 1;
-}
-
-footer div.csj72 {
-    order: 2;
-}
-
-footer div.ffjda {
-    order: 3;
-}
 
 @media (max-width: 991px) {
     header {
@@ -530,35 +182,6 @@ footer div.ffjda {
 /* Extra small: <576px */
 /* SM: >= 576px */
 @media (min-width: 576px) {
-    #organization {
-        flex-grow: 1;
-    }
-
-    header .organization-name {
-        font-size: 2em;
-    }
-
-    #organization .organization-address {
-        display: block;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    footer div.superu {
-        order: 1;
-    }
-
-    footer div.neuville-sur-sarthe {
-        order: 2;
-    }
-
-    footer div.csj72 {
-        order: 3;
-    }
-
     section#main {
         flex-direction: row;
     }
@@ -570,240 +193,10 @@ footer div.ffjda {
     .col {
         padding: 0.4rem;
     }
-
-    header .logo {
-        display: block;
-    }
-
-    header .logo #text-judo,
-    header .logo #text-club,
-    header .logo #text-neuville {
-        display: none;
-    }
 }
 
-/* MD: >= 768px */
-@media (min-width: 768px) {
-    header .logo {
-        display: block
-    }
-
-    header .organization-name {
-        display: none;
-    }
-
-}
-
-/* LD: >= 992px */
-@media (min-width: 992px) {
-    header {
-        flex-direction: row;
-    }
-}
 
 /* XL: >= 1200px */
 
 
-#menu {
-    font-size: clamp(100%, 1rem + 2vw, 18px);
-}
 
-#menu input {
-    display: none;
-}
-
-#menu input+label {
-    display: none;
-}
-
-@media (max-width: 650px) {
-
-    #menu nav {
-        background: #020304;
-        flex-direction: column;
-    }
-
-    #menu nav a {
-        background-color: transparent;
-    }
-
-    #menu input+label {
-        position: fixed;
-        top: 20px;
-        left: calc(100vw - 50px);
-        z-index: 101;
-        font-size: 0.5em;
-        bottom: 0px;
-        background-color: #fff;
-        display: block;
-        border: 1px solid #fff;
-        padding: 5px;
-        padding-bottom: 10px;
-
-    }
-
-    #menu input+label span {
-        width: 100%;
-        height: 2px;
-        top: 50%;
-        margin-top: -1px;
-        left: 0;
-        display: block;
-        background: #020304;
-        transition: 0.5s;
-        margin-bottom: 5px;
-    }
-
-    #menu input+label {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-        height: 50px;
-    }
-
-    #menu input+label svg {
-        border: 1px solid white;
-        background-color: white;
-    }
-
-    #menu input+label svg text.text-menu {
-        opacity: 1;
-    }
-
-    #menu input+label svg text.text-close {
-        opacity: 0;
-    }
-
-    #menu input:checked+label svg text.text-menu {
-        opacity: 0;
-    }
-
-    #menu input:checked+label svg text.text-close {
-        opacity: 1;
-    }
-
-    #menu input:checked+label svg {
-        border: 1px solid black;
-    }
-
-    #menu input+label svg text {
-        font: bold 30px sans-serif;
-        width: 100%;
-        text-align: center;
-    }
-
-    #menu input+label svg path.line {
-        fill: none;
-        stroke: #000;
-        stroke-width: 6;
-        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    #menu input+label svg path.line1 {
-        stroke-dasharray: 60 207;
-        stroke-width: 6;
-    }
-
-    #menu input+label svg path.line2 {
-        stroke-dasharray: 60 60;
-        stroke-width: 6;
-    }
-
-    #menu input+label svg path.line3 {
-        stroke-dasharray: 60 207;
-        stroke-width: 6;
-    }
-
-    #menu input:checked+label svg path.line1 {
-        stroke-dasharray: 90 207;
-        stroke-dashoffset: -134;
-        stroke-width: 6;
-    }
-
-    #menu input:checked+label svg path.line2 {
-        stroke-dasharray: 1 60;
-        stroke-dashoffset: -30;
-        stroke-width: 6;
-    }
-
-    #menu input:checked+label svg path.line3 {
-        stroke-dasharray: 90 207;
-        stroke-dashoffset: -134;
-        stroke-width: 6;
-    }
-
-    /*    #menu input+label span:first-child {
-        top: 3px;
-    }
-
-    #menu input+label span:last-child {
-        top: 16px;
-    }*/
-
-    #menu label:hover {
-        cursor: pointer;
-    }
-
-    #menu input:checked+label span {
-        opacity: 0;
-        top: 50%;
-        position: absolute;
-    }
-
-
-
-    #menu input:checked+label span:first-child {
-        opacity: 1;
-        transform: rotate(405deg);
-    }
-
-    #menu input:checked+label span:nth-child(3n) {
-        opacity: 1;
-        transform: rotate(-405deg);
-    }
-
-    #menu input~nav {
-        background: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0px;
-        z-index: 100;
-        transition: 0.2s;
-        transition-delay: 0.2s;
-        overflow: hidden;
-    }
-
-    #menu input~nav>a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #020304;
-        font-weight: 700;
-        font-family: sans-serif;
-        display: block;
-        padding: 30px;
-        padding: clamp(15px, 1rem + 1vh, 30px);
-        opacity: 0;
-        transition: 0.2s;
-        transition-delay: 0s;
-    }
-
-    #menu input:checked~nav {
-        height: 100%;
-        transition-delay: 0s;
-    }
-
-    #menu input:checked~nav>a {
-        opacity: 1;
-        transition-delay: 0.5s;
-        border-bottom: 1px solid;
-        border-radius: 0;
-    }
-
-}

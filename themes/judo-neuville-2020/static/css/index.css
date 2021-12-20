@@ -1,0 +1,269 @@
+
+#frontpage {
+    display: grid;
+    grid-area: frontpage;
+}
+
+#frontpage div.wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#frontpage img {
+    width: auto;
+    width: clamp(10rem, 1vw + 10rem, 30rem);
+    height: clamp(80px, 50px + 10vw, 280px);
+    width: clamp(80px, 50px + 10vw, 280px);
+    margin: 2vw;
+    border: 4px solid #b50000c4;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+#frontpage img:before {
+    content: ' ';
+    height: clamp(82px, 50px + 10vw +2px, 282px);
+    width: clamp(82px, 50px + 10vw + 2px, 282px);
+    background-color: red;
+
+}
+
+#frontpage .grid-image {
+    flex-wrap: no-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#frontpage #judo ul li {
+    font-family: cursive;
+    line-height: 2rem;
+}
+@media (max-width: 575px) {
+    #taiso {
+        background-position: top -50%;
+        background-color: #4d4d4d;
+/*        background-image: url("../img/taiso.svg") ;*/
+        background-position: top center;
+    }
+}
+
+#taiso h3, #judo h3 {
+    text-align: center;
+}
+
+#taiso ul, #judo ul {
+    padding: 0;
+    font-size: clamp(0.8rem, 1vw + 0.8rem, 4rem);
+    list-style: none;
+    margin: 0;
+}
+#taiso ul li , #judo ul li {
+    flex-shrink: 3;
+}
+#taiso p, #judo p {
+    text-align: center;
+}
+
+.custom-shape-divider-top-1639849871 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1639849871 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-1639849871 .shape-fill {
+    fill: #fff;
+}
+
+
+#judo ul {
+    display: inline-block;
+}
+
+#judo ul.left li {
+    text-align: right;
+}
+#judo ul.right li:nth-child(1) {
+    margin-left: 10px;
+}
+#judo ul.right li:nth-child(2) {
+    margin-left: 40px;
+}
+#judo ul.right li:nth-child(3) {
+    margin-left: 40px;
+}
+#judo ul.right li:nth-child(4) {
+    margin-left: 10px;
+}
+
+#judo ul.left li:nth-child(1) {
+    margin-right: 10px;
+}
+#judo ul.left li:nth-child(2) {
+    margin-right: 40px;
+}
+#judo ul.left li:nth-child(3) {
+    margin-right: 40px;
+}
+#judo ul.left li:nth-child(4) {
+    margin-right: 10px;
+}
+#judo li {
+    padding: 1rem;
+}
+
+
+
+#taiso {
+    background-color: #4d4d4d;
+    /*        background-image: url("../img/taiso.svg") ;*/
+    color: #eee;
+}
+
+#taiso {
+    background-color: #4d4d4d;
+    /*background: linear-gradient(135deg, #b8b8b8, #a8a8a8, #989898, #888888, #797979, #6a6a6a, #5b5b5b, #4d4d4d);
+    background: linear-gradient(135deg, #a3a3a3, #969696, #898989, #7d7d7d, #707070, #646464, #595959, #4d4d4d);
+    /*background-image: url("https://transparenttextures.com/patterns/diagmonds-light.png");
+    background-image: url("https://transparenttextures.com/patterns/diamond-upholstery.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /*background-color: #1f1f1f;
+    opacity: 0.8;
+    background-image: radial-gradient(#4d4d4d 0.8px, #1f1f1f 0.8px);
+    background-size: 16px 16px;
+*/
+/*
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    background-image:  linear-gradient(#4d4d4d 1.6px, transparent 1.6px), linear-gradient(to right, #4d4d4d 1.6px, #1f1f1f 1.6px);
+    background-size: 32px 32px;
+
+*/
+
+/*
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    background-image:  radial-gradient(#4d4d4d 0.8px, transparent 0.8px), radial-gradient(#4d4d4d 0.8px, #1f1f1f 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+*/
+
+    /*
+
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    background: linear-gradient(135deg, #4d4d4d55 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(225deg, #4d4d4d 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(315deg, #4d4d4d55 25%, transparent 25%) 0px 0/ 32px 32px, linear-gradient(45deg, #4d4d4d 25%, #1f1f1f 25%) 0px 0/ 32px 32px;*/
+/*
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1f1f1f 16px ), repeating-linear-gradient( #4d4d4d55, #4d4d4d );
+*/
+/*
+// lignes gris/
+    background-image: linear-gradient(135deg, #a3a3a3 6.52%, #4d4d4d 6.52%, #4d4d4d 50%, #a3a3a3 50%, #a3a3a3 56.52%, #4d4d4d 56.52%, #4d4d4d 100%);
+    background-size: 325.27px 325.27px;
+*/
+
+    /* Constellation */
+background-color: #4D4D4D;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='606' height='606' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23565656' stroke-width='3.4'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23636363'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+#taiso h3 {
+    color: #00ffff;
+    text-align: center;
+    font-weight: 800;
+    font-stretch: 200%;
+    font-variant-caps: titling-caps;
+    text-shadow: 2px 2px 0 #FF00FF;
+}
+
+
+#taiso ul {
+    margin: auto;
+    display: block;
+    position: relative;
+}
+#taiso ul li {
+    display: block;
+    position: relative;
+}
+
+div#taiso ul.right li:nth-child(1) {
+    margin-left: 10px;
+}
+div#taiso ul.right li:nth-child(2) {
+    margin-left: 80px;
+}
+div#taiso ul.right li:nth-child(3) {
+    margin-left: 80px;
+}
+div#taiso ul.right li:nth-child(4) {
+    margin-left: 10px;
+}
+
+#taiso ul.left li {
+    list-style-type: none;
+}
+#taiso ul.left li:nth-child(1) {
+    margin-right: 10px;
+    top: 10px;
+    left: 30%;
+}
+#taiso ul.left li:nth-child(2) {
+    margin-right: 60px;
+    top: 0px;
+    left: 20%;
+}
+#taiso ul.left li:nth-child(3) {
+    margin-right: 20px;
+    top: 40px;
+    left: 25%;
+}
+#taiso ul.left li:nth-child(4) {
+    margin-right: 20px;
+    top: -120px;
+    left: 45%;
+}
+#taiso ul.left li:nth-child(5) {
+    margin-right: 10px;
+    top: -350px;
+    left: 50%;
+}
+#taiso ul li {
+    list-style: none;
+    padding: 1rem;
+    vertical-align: center;
+}
+#taiso ul li:before {
+    content: "\2022";
+    content: "";
+    color: #00ffff;
+    background-color: #00ffff;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1em;
+}
+#taiso ul.center  {
+    text-align: center;
+    margin: auto;
+}
+
+

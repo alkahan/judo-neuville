@@ -9,35 +9,46 @@
         {{- partial "hero.html" . -}}
         <div id="frontpage">
             <div id="judo">
-                    <h1>Judo</h3>
-                            <p>Cours de judo enfant à partir de 4 ans.</p>
+                <h3>Judo</h3>
+                <p>Cours de judo enfant à partir de 4 ans. Cours de judo adulte
+                : judo loisir, compétition, vétérant</p>
 
-                            <p>Cours de judo adulte tous niveaux</p>
-
-
-                            <ul>
-                                <li>Amitié</li>
-                                <li>Courage</li>
-                                <li>Sincérité</li>
-                                <li>Honneur</li>
-                                <li>Modestie</li>
-                                <li>Respect</li>
-                                <li>Contrôle de soi</li>
-                                <li>Politesse</li>
-                            </ul>
+                <div class="wrap">
+                    <ul class="left">
+                        <li>Amitié</li>
+                        <li>Courage</li>
+                        <li>Sincérité</li>
+                        <li>Honneur</li>
+                    </ul>
+                    <div class="grid-image"> <img src="img/adultes-q84.jpg" width="316" height="316">
+                        <img src="img/eveils-q84.jpg" width="292" height="292">
+                        <img src="img/enfants-q84.jpg" width="306" height="306">
+                    </div>
+                    <ul class="right">
+                        <li>Modestie</li>
+                        <li>Respect</li>
+                        <li>Contrôle de soi</li>
+                        <li>Politesse</li>
+                    </ul>
+                </div>
             </div>
-            <div id="taiso" >
-                    <h1>Taïso</h3>
-                        <p>Entretient et préparation physique</p>
-                        <p>à partir de 14 ans</p>
-                        <ul>
-                            <li>Endurance</li>
-                            <li>Cardio</li>
-                            <li>Renforcement musculaire</li>
-                            <li>Souplesse</li>
-                            <li>Coordination</li>
-                        </ul>
+            <div id="taiso" class="custom-shape-divider-top-1639849871">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+                </svg>
+                <h3>Taïso</h3>
+                <p>Entretien et préparation physique, à partir de 14 ans</p>
+                <ul class="left">
+                    <li>Endurance</li>
+                    <li>Cardio</li>
+                    <li>Souplesse</li>
+                    <li>Coordination</li>
+                    <li>Renforcement musculaire</li>
+                </ul>
             </div>
+        </div>
+        <div id="last-article">
+
         </div>
     </div>
     <script src="{{ "js/popper.min.js" | absURL}}"></script>

@@ -1,0 +1,53 @@
+footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 50px;
+    min-height: 200px;
+    background-color: #555;
+}
+
+footer div {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div.superu {
+    order: 2;
+}
+
+footer div.neuville-sur-sarthe {
+    order: 1;
+}
+
+footer div.csj72 {
+    order: 2;
+}
+
+footer div.ffjda {
+    order: 3;
+}
+
+/* SM: >= 576px */
+@media (min-width: 576px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer div.superu {
+        order: 1;
+    }
+
+    footer div.neuville-sur-sarthe {
+        order: 2;
+    }
+
+    footer div.csj72 {
+        order: 3;
+    }
+}
