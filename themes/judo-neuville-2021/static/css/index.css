@@ -198,10 +198,32 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: auto;
     display: block;
     position: relative;
+    clear: both;
 }
 #taiso ul li {
-    display: block;
     position: relative;
+
+    display: block;
+    padding: 1rem;
+
+    background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%3E%3Ccircle%20class%3D%22circle%22%20cx%3D%2240%22%20cy%3D%2240%22%20r%3D%2238%22%2F%3E%3C%2Fsvg%3E");
+
+    vertical-align: top;
+    list-style: none;
+    clear: both;
+}
+#taiso ul li:before {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+
+    content: "\2022";
+    content: "";
+    color: #00ffff;
+    background-color: #00ffff;
+    border-radius: 50%;
+
 }
 
 div#taiso ul.right li:nth-child(1) {
@@ -222,44 +244,30 @@ div#taiso ul.right li:nth-child(4) {
 }
 #taiso ul.left li:nth-child(1) {
     margin-right: 10px;
-    top: 10px;
+    top: 5%;
     left: 30%;
 }
 #taiso ul.left li:nth-child(2) {
     margin-right: 60px;
-    top: 0px;
+    top: 2%;
     left: 20%;
 }
 #taiso ul.left li:nth-child(3) {
     margin-right: 20px;
-    top: 40px;
+    top: 30%;
     left: 25%;
 }
 #taiso ul.left li:nth-child(4) {
     margin-right: 20px;
-    top: -120px;
-    left: 45%;
+    top: 10%;
+    left: 60%;
+    position: absolute;
 }
 #taiso ul.left li:nth-child(5) {
     margin-right: 10px;
-    top: -350px;
-    left: 50%;
-}
-#taiso ul li {
-    list-style: none;
-    padding: 1rem;
-    vertical-align: center;
-}
-#taiso ul li:before {
-    content: "\2022";
-    content: "";
-    color: #00ffff;
-    background-color: #00ffff;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 1em;
+    top: 50%;
+    left: 65%;
+    position: absolute;
 }
 #taiso ul.center  {
     text-align: center;

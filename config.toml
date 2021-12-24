@@ -1,7 +1,7 @@
 baseURL = "https://judo-neuville.eu.org"
 languageCode = "fr-fr"
 title = "Judo Club de Neuville sur Sarthe"
-theme = "judo-neuville-2020"
+theme = "judo-neuville-2021"
 staticDir = ["static"]
 [params]
   description = "Judo club de Neuville sur Sarthe propose des cours de judo à partir de 4 ans et cours de taïso à partir de 14 ans"

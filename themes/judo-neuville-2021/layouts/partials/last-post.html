@@ -1,0 +1,17 @@
+
+<section id="main" class="container">
+    {{ range last 1 (where site.RegularPages "Type" "posts").ByDate }}
+    <article class="last-post-item">
+        <h3 class="title">{{ .Title }}</h3>
+        <div>
+            {{ .Content }}
+            {{ with .Resources.ByType "image" }}
+            {{ range . }}
+            {{- partial "picture2.html" . -}}
+            {{ end }}
+            {{ end }}
+        </div>
+    </article>
+    {{ end }}
+    <a href="/posts">Accès aux archives</a>
+</section>

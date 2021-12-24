@@ -1,4 +1,4 @@
-<header>
+<header id="header-area">
     <div id="menu">
         <input id="burger" type="checkbox" />
         <label for="burger">
@@ -15,6 +15,9 @@
         <nav>
             <a href="/" title="Accueil" classx="nav-link align-self-end text-light mx-2">
                 Accueil
+            </a>
+            <a href="/posts" title="Actualité" classx="nav-link align-self-end text-light mx-2">
+                Actualité
             </a>
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}" title="{{ .Title }}" classx="nav-link align-self-end text-light mx-2">
@@ -50,8 +53,8 @@
                 <meta itemprop="latitude" content="48.07947" />
                 <meta itemprop="longitude" content="0.19385" />
             </span>
-            ☎ <a class="p-telephone" href="tel:0640767055" itemprop="telephone">06 40 76 70 55</a>
-            📧 <a class="p-email" href="mailto:judoclub.neuvillesursarthe@yahoo.fr" itemprop="email">judoclub.neuvillesursarthe@yahoo.fr</a>
+            ☎&nbsp;<a class="p-telephone" href="tel:0640767055" itemprop="telephone">06 40 76 70 55</a>
+            📧&nbsp;<a class="p-email" href="mailto:judoclub.neuvillesursarthe@yahoo.fr" itemprop="email">judoclub.neuvillesursarthe@yahoo.fr</a>
 
         </div>
     </div>

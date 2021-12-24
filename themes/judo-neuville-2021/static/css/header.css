@@ -1,4 +1,4 @@
-header {
+header#header-area {
     position: relative;
     display: grid;
     overflow: hidden;
@@ -10,26 +10,28 @@ header {
         "aside-logo aside-logo aside-logo" 160px / 280px 1fr 1fr;
 }
 
-header a.logo {
+header#header-area a.logo {
     grid-area: logo;
     width: 11rem;
+    margin: auto;
 }
-header div.aside-logo {
+header#header-area div.aside-logo {
     grid-area: aside-logo;
+    text-align: center;
 }
 
-header #menu {
+header#header-area #menu {
     top: 0px;
 }
 
 
-header .aside-logo {
+header#header-area .aside-logo {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-header .organization-name {
+header#header-area .organization-name {
     font-size: 1em;
     /*    text-shadow: 2px 2px #cccccc;*/
 }
@@ -80,7 +82,7 @@ header .organization-name {
     z-index: -1;
 }*/
 
-header .logo {
+header#header-area .logo {
     z-index: 100;
 }
 
@@ -96,19 +98,22 @@ header .logo {
 /* Extra small: <576px */
 /* SM: >= 576px */
 @media (min-width: 576px) {
-    header {
+    header#header-area {
         grid-template:
             "menu menu menu" 40px
             "logo aside-logo aside-logo" 160px / 280px 1fr 1fr;
     }
-    header a.logo {
+    header#header-area a.logo {
         width: auto;
+    }
+    header#header-area div.aside-logo {
+        text-align: left;
     }
     #organization {
         flex-grow: 1;
     }
 
-    header .organization-name {
+    header#header-area .organization-name {
         font-size: 2em;
         font-size: clamp(0.7em, 0.7em + 1vw, 2em);
     }
@@ -118,24 +123,24 @@ header .logo {
         display: block;
     }
 
-    header .logo {
+    header#header-area .logo {
         display: block;
     }
 
-    header .logo #text-judo,
-    header .logo #text-club,
-    header .logo #text-neuville {
+    header#header-area .logo #text-judo,
+    header#header-area .logo #text-club,
+    header#header-area .logo #text-neuville {
         display: none;
     }
 }
 
 /* MD: >= 768px */
 /*@media (min-width: 768px) {
-    header .logo {
+    header#header-area .logo {
         display: block
     }
 
-    header .organization-name {
+    header#header-area .organization-name {
         display: none;
     }
 
@@ -143,7 +148,7 @@ header .logo {
 
 /* LD: >= 992px */
 @media (min-width: 992px) {
-    header {
+    header#header-area {
         flex-direction: row;
     }
 }

@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section id="main" class="posts single">
+    <article id="content" class="col">
+        <h1 id="title">{{ .Title }}</h1>
+        <info>
+            {{ .Date.Format "Mon Jan 2, 2006" }}
+            -
+            {{ with .Params.tags }}
+            <ul id="tags">
+                {{ range . }}
+                <li> <a href="{{ "tags" | absURL }}/{{ . | urlize }}" rel="tag">{{ . }}</a> </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            -
+            ({{ .WordCount }} mots)
+        </info>
+        {{ .Content }}
+        {{ $images := ( .Resources.ByType "image" ) }}
+        {{ if gt (len $images)  1 }}
+        <gallery>
+            {{ end }}
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
+        {{- partial "picture2.html" . -}}
+        {{ end }}
+            {{ end }}
+            {{ if gt (len $images)  1 }}
+        </gallery>
+        {{ end }}
+    </article>
+    {{ if .Params.toc }}
+    <aside class="col-md-auto">
+        <header>
+            <h3>{{.Title}}</h3>
+        </header>
+        </h2>
+        </header>
+        {{ .TableOfContents }}
+    </aside>
+    {{ end }}
+<nav>
+    {{ with .PrevInSection }}
+    <a class="previous" href="{{.Permalink}}" rel="prev"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a class="next" href="{{.Permalink}}" rel="next"> {{.Title}}</a>
+    {{ end }}
+</nav>
+</section>
+{{ end }}

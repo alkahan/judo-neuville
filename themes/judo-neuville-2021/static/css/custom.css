@@ -1,10 +1,9 @@
 
 #body {
-    height: 100%;
-    display: grid;
     grid-template:
         "header header" 200px 
-        "frontpage frontpage" ;
+        "frontpage frontpage"
+        ;
 }
 
 #content {
@@ -27,7 +26,6 @@
 .card-item div {
     text-shadow: 2px 2px #555;
 }
-
 
 .no-webp .eveil,
 .no-js .eveil {
@@ -145,6 +143,10 @@ section#main {
     padding-left: 15px;*/
     margin-right: auto;
     margin-left: auto;
+    grid-area: content;
+}
+
+section#main.default {
     display: flex;
     flex-direction: column;
 }
@@ -166,7 +168,16 @@ section#main aside {
     padding-right: 15px;
 }
 
-
+div.picture {
+    background-color: #e0e0e0;
+}
+div.picture a.original-link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
 
 
 @media (max-width: 991px) {
@@ -182,7 +193,7 @@ section#main aside {
 /* Extra small: <576px */
 /* SM: >= 576px */
 @media (min-width: 576px) {
-    section#main {
+    section#main.single.default {
         flex-direction: row;
     }
 

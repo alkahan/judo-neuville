@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section id="main" class="posts-list">
+    <h1>Liste des articles</h1>
+    {{ range .Pages }}
+    <article>
+        <h3 class="title"><a href="{{.Permalink}}">{{.Title}}</a></h3>
+        <info>
+            {{ .Date.Format "Mon Jan 2, 2006" }}
+            - 
+            {{ with .Params.tags }}
+            <ul id="tags">
+                {{ range . }}
+                <li> <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a> </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            -
+            ({{ .WordCount }} mots)
+        </info>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+    <aside class="col-md-auto">
+        <header>
+            <h3>{{.Title}}</h3>
+        </header></h2></header>
+        {{ .TableOfContents }}
+    </aside>
+</section>
+{{ end }}

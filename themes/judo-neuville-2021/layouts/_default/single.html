@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section id="main" class="container">
+<section id="main" class="default single container">
         <article id="content" class="col">
             <h1 id="title">{{ .Title }}</h1>
             {{ .Content }}
@@ -8,8 +8,8 @@
         <aside class="col-md-auto">
             <header>
                 <h3>{{.Title}}</h3>
-            </header></h2></header>
-                {{ .TableOfContents }}
+            </header>
+            {{ .TableOfContents }}
         </aside>
         {{ end }}
 </section>

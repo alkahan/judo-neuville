@@ -1,0 +1,67 @@
+
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+
+{{ $src := . }}
+{{ $maxWidth := $src.Width }}
+{{ $img := imageConfig (.RelPermalink | printf "content/%s" ) }}
+{{ $resized := $img }}
+
+{{/* if ne .Params.width "" */}}
+{{/* $maxWidth = .Params.width }}
+{{/* $resized = $src.Resize (printf "%sx" $maxWidth) }}
+{{/* $img = imageConfig ($resized.RelPermalink | printf "resources/_gen/images/%s" ) }}
+{{/* end }}
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+
+{{ $lqipw := default "20x" }}
+{{ $xtinyw := default "300x" }}
+{{ $tinyw := default "500x" }}
+{{ $smallw := default "800x" }}
+{{ $medium1w := default "1000x" }}
+{{ $mediumw := default "1200x" }}
+{{ $largew := default "1500x" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ $lqip := $src.Resize $lqipw }}
+{{ $xtiny := $src.Resize $xtinyw }}
+{{ $tiny := $src.Resize $tinyw }}
+{{ $small := $src.Resize $smallw }}
+{{ $medium1 := $src.Resize $medium1w }}
+{{ $medium := $src.Resize $mediumw }}
+{{ $large := $src.Resize $largew }}
+
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
+<div class="picture img">
+    <picture alt="description of image">
+        <!-- high-res 
+        <source srcset="{{ $large.RelPermalink }}" media="(min-width: {{ $largew }} ) ">
+        <source srcset="{{ $medium.RelPermalink }}" media="(min-width: {{ $mediumw }} ) ">
+        <source srcset="{{ $medium1.RelPermalink }}" media="(min-width: {{ $medium1w }} ) ">
+        <source srcset="{{ $small.RelPermalink }}" media="(min-width: {{ $smallw }} ) ">
+        <source srcset="{{ $tiny.RelPermalink }}" media="(min-width: {{ $tinyw }} ) ">
+        <source srcset="{{ $xtiny.RelPermalink }}" media="(min-width: {{ $xtinyw }} ) ">
+        Fallback content -->
+
+    </picture>
+    <picture alt="{{ .Params.title }}">
+        <!-- high-res -->
+        <source srcset="
+                        {{ $large.RelPermalink }} 1500w,
+                        {{ $medium.RelPermalink }} 1200w,
+                        {{ $medium1.RelPermalink }} 1000w,
+                        {{ $small.RelPermalink }} 800w,
+                        {{ $tiny.RelPermalink }} 500w,
+                        {{ $xtiny.RelPermalink }} 300w
+                        "
+                sizes="1500w 1200w 1000w 800w 500w 300w"
+        >
+        <!-- Fallback content -->
+        <img src="{{ $src.RelPermalink }}" alt="{{ .Params.title }}" class="lazyload1">
+
+    </picture>
+    <a href="{{ $src.RelPermalink }}" alt="{{ .Params.title }}" class="original-link">Lien vers l'image originale</a>
+</div>
