@@ -1,18 +1,32 @@
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="facebook-domain-verification" content="z01rvnldzm0o2544ytdfaxg0panusp" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ if .IsHome }}
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}" />{{ end }}
     {{ else if .IsPage }}
-	{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}" />{{ end }}
+    {{ with .Title }}
+    <meta property="og:title" content="{{ . }}" />{{ end }}
+    <meta property="og:type" content="article" />
+    {{ with .Description }}
+    <meta property="og:description" content="{{ . }}" />{{ end }}
+    {{ with .Resources.ByType "image" }}
+    {{ range . }}
+    <meta property="og:image" content="{{ .Permalink }}" />
     {{ end }}
-	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
-	{{ hugo.Generator }}
-	<title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+    {{ end }}
+    {{ end }}
+    {{ with .Site.Params.name }}
+    <meta name="author" content="{{ . }}">{{ end }}
+    {{ hugo.Generator }}
+    <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
     {{ with .Params.microformat }}
     <script type="application/ld+json">
-        {{ . }}
+    {{ . }}
     </script>
     {{ end }}
 	{{ "<!-- Stylesheets -->" | safeHTML }}
@@ -25,7 +39,7 @@
 	  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}?{{ now.Unix }}">
 	  <link rel="stylesheet" href="{{ "css/single.css" | absURL }}?{{ now.Unix }}">
     <script>
-     document.documentElement.classList.remove("no-js");
+        document.documentElement.classList.remove("no-js");
     </script>
 
 </head>
