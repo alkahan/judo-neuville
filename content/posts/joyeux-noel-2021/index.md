@@ -7,4 +7,4 @@ tags:
 - club
 ---
 
-Le Judo Club de Neuville-sur-Sarthe vous souhaites un joyeux Noël 2021 !
+Le Judo Club de Neuville-sur-Sarthe vous souhaite un joyeux Noël 2021 !
